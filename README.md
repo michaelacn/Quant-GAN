@@ -16,4 +16,4 @@ This repository includes code from:
 ### TCN implementations are provided for Torch
 
 
-### For the Torch implementation of a TCN see the notebooks [torch_train.ipynb](./torch_train.ipynb) and [torch_model.ipynb](./torch_model.ipynb)
+### For the Torch implementation of a TCN see the notebooks [train.ipynb](./torch_train.ipynb) and [torch_model.ipynb](./torch_model.ipynb)
