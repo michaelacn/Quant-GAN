@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+torch
+yfinance
+preprocess
+sklearn
+scipy
+
