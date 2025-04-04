@@ -11,12 +11,12 @@ Cette implémentation s’appuie sur l’article **[Wiese et al., “Quant GANs:
 ## Structure du projet
 
 
-- **model/** : Scripts pour implémentation du model (sous PyTorch).  
-- **preprocess/** : Scripts pour préparer les séries temporelles.  
+- **model/** : Scripts .py pour implémentation du model (sous PyTorch).  
+- **preprocess/** : Scripts .py pour préparer les séries temporelles.  
 - **saved_models/** : Répertoire pour sauvegarder les modèles entraînés au format JSON.  
 - **train.ipynb** : Notebook principal pour entraîner le Quant GAN
 - **preprocess.ipynb** : Explication détaillée du prétraitement de données.  
-- **torch_model.ipynb** : Explication de l'architecture du model.  
+- **torch_model.ipynb** : Explication détaillée de l'architecture du model.  
 - **requirements.txt** : Dépendances Python requises.
 
 ---
