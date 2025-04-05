@@ -8,4 +8,5 @@ torch
 scipy
 yfinance
 tqdm
+ipykernel
 preprocess
