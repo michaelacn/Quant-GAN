@@ -1,10 +1,10 @@
-pandas
 numpy
+pandas
 matplotlib
+scikit-learn
+statsmodels
 torch
+scipy
 yfinance
 preprocess
-scikit-learn
-scipy
-statsmodels
-
+model
