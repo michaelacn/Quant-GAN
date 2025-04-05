@@ -23,15 +23,16 @@ Cette implémentation s’appuie sur l’article **[Wiese et al., “Quant GANs:
 
 ## Installation
 
-1. **Install or update Conda** (if you haven’t already). You can refer to [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Anaconda](https://www.anaconda.com/products/distribution) for instructions.
+1. **Installer ou mettre à jour Conda** (si vous ne l’avez pas déjà fait). Vous pouvez consulter la documentation de [Miniconda](https://docs.conda.io/en/latest/miniconda.html) ou [Anaconda](https://www.anaconda.com/products/distribution) pour obtenir des instructions.
 
-2. **Clone this repository and install dependencies**:
+2. **Cloner ce dépôt et installer les dépendances** :
    ```bash
    git clone https://github.com/michaelacn/Quant-GAN.git
    cd Quant-GAN
    conda create --name quantgan python=3.11 -c https://conda.anaconda.org/conda-forge/ -y
    conda activate quantgan
    pip install -r requirements.txt
+   python -m ipykernel install --user --name quantgan --display-name "Python (quantgan)"
    ```
 
-You should now have a conda environment named `quantgan` with all required packages installed.
+Vous disposez maintenant d’un environnement conda nommé `quantgan` avec tous les paquets requis installés. N’hésitez pas à rafraîchir votre liste de noyaux (kernels) pour qu’il apparaisse.
