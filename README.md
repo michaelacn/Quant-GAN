@@ -27,7 +27,7 @@ Cette implémentation s’appuie sur l’article **[Wiese et al., “Quant GANs:
 
 2. **Clone this repository and install dependencies**:
    ```bash
-   git clone https://github.com/michaelacn/Quant-GAN
+   git clone https://github.com/michaelacn/Quant-GAN.git
    cd Quant-GAN
    conda create --name quantgan python=3.11 -c https://conda.anaconda.org/conda-forge/ -y
    conda activate quantgan
