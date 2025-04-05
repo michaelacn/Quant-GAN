@@ -4,6 +4,7 @@ matplotlib
 torch
 yfinance
 preprocess
-sklearn
+scikit-learn
 scipy
+statsmodels
 
