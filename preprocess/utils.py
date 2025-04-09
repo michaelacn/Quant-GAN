@@ -6,20 +6,13 @@ from scipy.stats import kurtosis, norm
 from statsmodels.tsa.stattools import acf
 
 
-def compute_leverage_effect(log_returns: pd.DataFrame, max_lag: int) -> pd.DataFrame:
+def compute_leverage_effect(log_returns: pd.Series, max_lag : int = 100) -> pd.Series:
     volatility = log_returns ** 2
-    leverage_effect = {}
-    
-    for asset in log_returns.columns:
-        corr_values = []
-        for lag in range(1, max_lag + 1):
-            asset_returns = log_returns[asset]
-            asset_vol = volatility[asset]
-            corr = np.corrcoef(asset_returns.iloc[:-lag], asset_vol.iloc[lag:])[0, 1]
-            corr_values.append(corr)
-        leverage_effect[asset] = corr_values
-    
-    return pd.DataFrame(leverage_effect, index=range(1, max_lag + 1))
+    corr_values = []
+    for lag in range(1, max_lag + 1):
+        corr = np.corrcoef(log_returns.iloc[:-lag], volatility.iloc[lag:])[0, 1]
+        corr_values.append(corr)
+    return pd.Series(corr_values, index=range(1, max_lag + 1))
 
 
 def delta_init(z):
