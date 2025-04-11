@@ -3,16 +3,6 @@ import pandas as pd
 from scipy.optimize import fmin
 from scipy.special import lambertw
 from scipy.stats import kurtosis, norm
-from statsmodels.tsa.stattools import acf
-
-
-def compute_leverage_effect(log_returns: pd.Series, max_lag : int = 100) -> pd.Series:
-    volatility = log_returns ** 2
-    corr_values = []
-    for lag in range(1, max_lag + 1):
-        corr = np.corrcoef(log_returns.iloc[:-lag], volatility.iloc[lag:])[0, 1]
-        corr_values.append(corr)
-    return pd.Series(corr_values, index=range(1, max_lag + 1))
 
 
 def delta_init(z):
